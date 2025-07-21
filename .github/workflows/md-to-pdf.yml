@@ -1,0 +1,31 @@
+name: Convert Markdown to PDF
+
+on:
+  push:
+    paths:
+      - journal.md
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Pandoc
+        run: sudo apt-get install -y pandoc texlive-xetex
+
+      - name: Convert journal.md to PDF
+        run: |
+          pandoc journal.md -o journal.pdf \
+            --pdf-engine=xelatex \
+            -V geometry:margin=1in \
+            -V fontsize=11pt
+
+      - name: Upload PDF as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: camp180-journal-pdf
+          path: journal.pdf

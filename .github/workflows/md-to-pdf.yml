@@ -1,4 +1,4 @@
-name: Convert Markdown to PDF
+name: Convert and Commit Journal PDF
 
 on:
   push:
@@ -7,25 +7,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  convert:
+  convert_and_commit:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4.3.1
+      - name: Checkout repo
+        uses: actions/checkout@v4.1.1
 
-      - name: Set up Pandoc
+      - name: Install Pandoc and LaTeX
         run: sudo apt-get install -y pandoc texlive-xetex
 
-      - name: Convert journal.md to PDF
+      - name: Convert Markdown to PDF
         run: |
           pandoc journal.md -o journal.pdf \
             --pdf-engine=xelatex \
             -V geometry:margin=1in \
             -V fontsize=11pt
 
-      - name: Upload PDF as Artifact
-        uses: actions/upload-artifact@v4.1.1
-        with:
-          name: camp180-journal-pdf
-          path: journal.pdf
+      - name: Commit PDF back to repo
+        run: |
+          git config user.name "Camp180 Bot"
+          git config user.email "bot@camp180.co.za"
+          git add journal.pdf
+          git commit -m "Auto-update: journal.pdf generated from journal.md" || echo "No changes to commit"
+          git push

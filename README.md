@@ -10,7 +10,7 @@ This repository is part of the **Camp180 Python 2D Game Development Course**, a 
 - **Give back** by helping sposor Camp180 coding campers!
 
 ## What's Inside
-- 'journal.md' - Your printable or digital coding journal
+- 'journal.md' - Your downloadable (printable) coding journal
 - Weekly lesson folders
 - Starter templates, student projects, and bonus challenges
 - Github tips amd cpllaboration coding resources
@@ -26,3 +26,32 @@ This repository is part of the **Camp180 Python 2D Game Development Course**, a 
 - Game design logic
 
 ## Course Layout
+| Module | Theme                       | Focus                                |
+|--------|-----------------------------|--------------------------------------|
+| 0      | Setup & Orientation         | Python, VS Code, terminal            |
+| 1      | Python Basics               | Variables, loops, conditionals       |
+| 2      | Functions & Data Structures | Lists, functions, dectionaries       |
+| 3      | VS Code Deep Dive           | Debugging, file navigation           |
+| 4      | GitHub & Collaboration      | Version control, shared repositories |
+| 5      | Turtle Graphics             | Drawing, creativity                  |
+| 6      | Pygame Intro                | Sprites, movement                    |
+| 7      | Player Interaction          | Sound, collisions                    |
+| 8      | Game Mechanics              | UI, powerups, AI                     |
+| 9      | Modular Game Design         | File structure, reusable code        |
+| 10     | Final Game Project          | Build, polish, publish               |
+
+## How to Contribute
+Whether you're a student mentor or sponsor
+
+- Fork this repo and start your own journey
+- Submit PRs with student games or improvements
+- Support: [Fund a Camper](https://www.camp180.co.za/registration/) or [Buy a PDF](https://gumroad.com/)
+
+## About Camp180
+Camp180 is on a mission to unlock coding creativity in underserved communities. Every paid tutorial, donation, or GitHub star helps **sponsor youth** to attend coding camps and discover the magic of technology.
+
+> Every line of code you write could inspire someone else to start.
+
+## Credits
+- Created by [Camp180](camp180.co.za)
+- Thanks to all contributors and supporters!

@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Pandoc
         run: sudo apt-get install -y pandoc texlive-xetex
@@ -25,7 +25,7 @@ jobs:
             -V fontsize=11pt
 
       - name: Upload PDF as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: camp180-journal-pdf
           path: journal.pdf

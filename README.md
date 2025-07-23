@@ -7,7 +7,7 @@ This repository is part of the **Camp180 Python 2D Game Development Course**, a 
 - **Learn** coding fundamentals.
 - **Practice** with bite-sized projects.
 - **Build** your own 2D games.
-- **Give back** by helping sposor Camp180 coding campers!
+- **Give back** by helping sponsor Camp180 coding campers!
 
 ## What's Inside
 - 'journal.md' - Your downloadable (printable) coding journal

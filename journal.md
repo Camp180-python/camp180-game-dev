@@ -1,4 +1,5 @@
 # My Camp180 Journal - Python 2D Game Dev
+
 > A printable coding journal to track your progress, reflect on your learning, and grow as a creative coder.
 
 ## About This Journal

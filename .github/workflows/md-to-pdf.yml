@@ -1,5 +1,8 @@
 name: Convert and Commit Journal PDF
 
+permissions:
+  contents: write
+  
 on:
   push:
     paths:

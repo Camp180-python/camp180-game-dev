@@ -30,6 +30,4 @@ jobs:
           git config user.email "bot@camp180.co.za"
           git add journal.pdf
           git commit -m "Auto-update: journal.pdf generated from journal.md" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Camp180-python/camp180-game-dev.git HEAD:main
